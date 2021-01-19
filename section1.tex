@@ -19,7 +19,12 @@ $\rightarrow$ can be found by taking $\mathbb{P}[X,Y]$ take Y const.
 \subsection*{Distributions}
 $\mathcal{N}(x|\mu, \sigma^2)=\frac{e^{-(x-\mu)^2/(2\sigma^2)}}{\sqrt{2\pi\sigma^2}}$\\
 $\mathcal{N}(x|\bm{\mu}, \bm{\Sigma})= \frac{e^{-\frac{1}{2}(\mathbf{x}-\bm{\mu})^T\bm{\Sigma}^{-1}(\mathbf{x}-\bm{\mu})}}{(2\pi)^{D/2}|\bm{\Sigma}|^{1/2}} $\\
+
 $\text{Ber}(x|\theta) = \theta^x(1-\theta)^{1-x} \quad 0 \leq \theta \leq 1$
+
+$\text{Beta}(x|\alpha,\beta) = \frac{x^{\\alpha-1}(1-x)^{\\beta-1}} {\\Beta(\\alpha,\\beta)}
+
+
 \subsection*{Chebyshev \& Consistency}
 $\mathbb{P}(|X-\mathbb{E}[X]|\geq \epsilon)\leq \frac{\mathbb{V}[X]}{\epsilon^2}$
 \subsection*{Jensen Inequality}
@@ -82,7 +87,7 @@ Find Posterior Density: $p(\theta|\mathcal{X})$.\\
 $\mathcal{X}^n=\{x_1, \cdots, x_n\}$\\
 $p(\theta|\mathcal{X}^n)=\frac{p(x_n|\theta)p(\theta|\mathcal{X}^{n-1})}{\int p(x_n|\theta)p(\theta|\mathcal{X}^{n-1}) d\theta}$
 % Difficult \& needs prior knowledge. But better against overfitting.
-
+C
 
 \subsection*{Frequentist vs Bayesian}
 Bayes (MAP): allows priors, provides distribution when estimating parameters, requires efficient integration methods when computing posteriors, prior often induces regularization term \\
